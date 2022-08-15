@@ -1,0 +1,167 @@
+/*reset a folha de estilo do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navegador {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+}
+
+#aluraLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.conteudo {
+    display: flex;
+    max-width: 900px;
+    margin: 0;
+
+}
+
+#inputTexto {
+    position: absolute;
+    width: 580px;
+    height: 48px;
+    left: 100px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    line-height: 150%;
+}
+
+#outputTexto {
+    position: absolute;
+    width: 410px;
+    height: 520px;
+    right: 40px;
+    margin-top: 40px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+    line-height: 150%;
+}
+
+#alertaSimbolo {
+    display: flex;
+    position: absolute;
+    color: #6E6C6C;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px; 
+    width: 500px;
+    height: 40px;
+    left: 190px;
+    top: 660px;
+    font-size: 14px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 24px;
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    left: 190px;
+    top: 700px;
+    justify-content: space-between;
+    
+}
+
+#botaoCodificar {
+    padding: 10px; 
+    padding-left: 35px; 
+    padding-right: 35px; 
+    font-size: 16px;
+    background: #0A3871;
+    border-color: #0A3871;
+    color: #fff;
+    border-radius: 15px;
+    border-style: solid;
+   
+}
+
+#botaoDescodificar {
+    padding: 10px; 
+    padding-left: 35px; 
+    padding-right: 35px; 
+    font-size: 16px;
+    background: #0A3871;
+    border-color: #0A3871;
+    color: #fff;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+#botaoCopiar {
+    padding: 10px; 
+    padding-left: 35px; 
+    padding-right: 35px; 
+    font-size: 16px;
+    background: rgb(10, 163, 92);
+    border-color: #ffff;
+    color: #0A3871;
+    border-radius: 15px;
+    border-style: solid; 
+    left: 190px;
+    margin-top: 700px;
+    margin-left: 750px;
+}
+
+#imagemSearch {
+    background-color: purple;
+    position: absolute;
+    width: 390px;
+    height: 490px;
+    top: 50px;
+    left: 830px;
+   
+}
+
+#contato {
+    display: flex;
+    width: 100%;
+    margin-top: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    justify-content: space-between; 
+    color: #0A3871;
+}
+
+#contato a {
+    color: #0A3871;
+    text-decoration: none;
+}
+
+
+
