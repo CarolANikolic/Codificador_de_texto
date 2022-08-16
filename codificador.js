@@ -1,4 +1,5 @@
 //remove imagem para exiber output
+
 function removeImagem() {
   document.getElementById("imagemSearch").remove();
 }
@@ -12,8 +13,8 @@ function codificaTexto() {
 
 //obtem acesso ao valor do input atraves do id. Usa método replace() para substituir todas as instâncias (g). Salva o texto codificado em variavel e exibe in output.
       var frase = document.getElementById("inputTexto").value;
-      var fraseCodificada = frase.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
-      removeImagem();
+     /var fraseCodificada = frase.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
+     // removeImagem();
       document.getElementById("outputTexto").value = fraseCodificada;
   }
 
@@ -21,8 +22,8 @@ function codificaTexto() {
     var frase = document.getElementById("inputTexto").value;
     outputTexto.value = "";
     var fraseDescodificada = frase.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
-    apagaTexto();
-    removeImagem();
+    //apagaTexto();
+    //removeImagem();
     document.getElementById("outputTexto").value = fraseDescodificada;
 
   }
