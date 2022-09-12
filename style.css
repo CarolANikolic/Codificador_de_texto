@@ -1,167 +1,128 @@
-/*reset a folha de estilo do navegador*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.all {
+        font-family: 'Inter', sans-serif;
 }
 
-.body {
+header {
+    padding: 0.5em; 
+}
+
+header img {
+    position: static;
+}
+
+.conteudo-primeiro {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding: 2em 2em 0.5em;  
+}
+
+.conteudo-segundo {
+    width: 100%;
+    display: flex;
+}
+
+.inputTexto, .outputTexto {
+    padding: 1em;
+    font-size: 1em;
+    margin-left: 2em;
     font-family: 'Inter', sans-serif;
 }
 
-.navegador {
-    display: flex;
-    justify-content: flex-start;
-    position: fixed;
-    width: 100%;
+.inputTexto {
+    width: 50%;
 }
 
-#aluraLogo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+.outputTexto {
+    width: 35%; 
+    background-image: url("./imagens/search.png");
+    /*Depois de adicionar a imagem como background, cancela a repetição da imagem */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.conteudo {
-    display: flex;
-    max-width: 900px;
-    margin: 0;
-
-}
-
-#inputTexto {
-    position: absolute;
-    width: 580px;
-    height: 48px;
-    left: 100px;
-    top: 168px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    color: #0A3871;
-    line-height: 150%;
-}
-
-#outputTexto {
-    position: absolute;
-    width: 410px;
-    height: 520px;
-    right: 40px;
-    margin-top: 40px;
-    border-radius: 30px;
-    font-weight: 400;
-    font-size: 32px;
-    color: #0A3871;
-    line-height: 150%;
-}
-
-#alertaSimbolo {
-    display: flex;
-    position: absolute;
-    color: #6E6C6C;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px; 
-    width: 500px;
-    height: 40px;
-    left: 190px;
-    top: 660px;
-    font-size: 14px;
+.texto-alerta {
+    padding: 0 4em 2em;
+    font-size: 1em;
+    color: #495057;
+    opacity: 0.8;
 }
 
 .botoes {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding-left: 0px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    gap: 24px;
-    position: absolute;
-    width: 500px;
-    height: 60px;
-    left: 190px;
-    top: 700px;
-    justify-content: space-between;
-    
-}
-
-#botaoCodificar {
-    padding: 10px; 
-    padding-left: 35px; 
-    padding-right: 35px; 
-    font-size: 16px;
-    background: #0A3871;
-    border-color: #0A3871;
-    color: #fff;
-    border-radius: 15px;
-    border-style: solid;
-   
-}
-
-#botaoDescodificar {
-    padding: 10px; 
-    padding-left: 35px; 
-    padding-right: 35px; 
-    font-size: 16px;
-    background: #0A3871;
-    border-color: #0A3871;
-    color: #fff;
-    border-radius: 15px;
-    border-style: solid;
-}
-
-#botaoCopiar {
-    padding: 10px; 
-    padding-left: 35px; 
-    padding-right: 35px; 
-    font-size: 16px;
-    background: rgb(10, 163, 92);
-    border-color: #ffff;
-    color: #0A3871;
-    border-radius: 15px;
-    border-style: solid; 
-    left: 190px;
-    margin-top: 700px;
-    margin-left: 750px;
-}
-
-#imagemSearch {
-    background-color: purple;
-    position: absolute;
-    width: 390px;
-    height: 490px;
-    top: 50px;
-    left: 830px;
-   
-}
-
-#contato {
-    display: flex;
     width: 100%;
-    margin-top: 800px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    justify-content: space-between; 
-    color: #0A3871;
+    display: flex;
+    padding: 0 20px 40px 20px;
 }
 
-#contato a {
+.botoes li {
+    display: inline-block;
+	text-align: center;
+	width: 28%; 
+	vertical-align: top;
+	margin: 0 1.5%;
+	border-radius: 10px ;
+}   
+       
+.botaoCodificar, .botaoDescodificar, .botaoCopiar {
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.botaoCodificar, .botaoDescodificar {
+    width: 180px;
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.botaoCopiar {
+    width: 150px;
+    background: #FFFFFF;
     color: #0A3871;
+    border: 2px solid #0A3871;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1em 1em 1px;
+    display: flex;
+    background: rgb(197,212,232);
+background: linear-gradient(0deg, rgba(197,212,232,1) 7%, rgba(229,229,229,1) 59%, rgba(255,255,255,1) 94%);
+}
+
+h1 {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 6em 1em 0 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #0A3871; 
+}
+
+.contato {
+    margin: 4em auto;
+    padding: 20px;
+}
+
+.contato a {
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
     text-decoration: none;
+    color: #0A3871;   
 }
 
+/*mudando as cores dos icones do rodape*/
+.contato i {
+    color: #0A3871;
+}
 
 
