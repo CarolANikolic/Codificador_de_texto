@@ -86,6 +86,12 @@ header img {
     border: 2px solid #0A3871;
 }
 
+/* Criando efeito "press effect" nos botões*/
+.botaoCodificar:active, .botaoDescodificar:active, .botaoCopiar:active {
+    transform: scale(0.98);
+}
+
+/*Aplicando estilo para o footer */
 footer {
     width: 100%;
     box-sizing: border-box;
